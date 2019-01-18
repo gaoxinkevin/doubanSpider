@@ -54,7 +54,8 @@ DOWNLOAD_DELAY = 0.5
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    # 'spider1.middlewares.Spider1DownloaderMiddleware': 543,
-    'spider1.middlewares.my_useragent': 543
+   #  'spider1.middlewares.my_proxy': 543,
+    'spider1.middlewares.my_useragent': 544
 }
 
 # Enable or disable extensions
@@ -90,7 +91,13 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-mongo_host = '127.0.0.1'
-mogodb_port = 27017
-mongo_db_name = 'douban'
-mongo_db_collection = 'douban_movie'
+# mongo_host = '127.0.0.1'
+# mogodb_port = 27017
+# mongo_db_name = 'douban'
+# mongo_db_collection = 'douban_movie'
+
+mysql_host = 'localhost'
+mysql_dbname = 'douban'
+mysql_port = 3306
+mysql_name = 'root'
+mysql_password = 'root'
